@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas-utils-core - Documentation</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="description" content="Comprehensive documentation for canvas-utils-core - A TypeScript library for HTML5 Canvas development">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">canvas-utils-core</h1>
+                <nav class="nav">
+                    <a href="#installation" class="nav-link">Installation</a>
+                    <a href="#quick-start" class="nav-link">Quick Start</a>
+                    <a href="#api" class="nav-link">API</a>
+                    <a href="#examples" class="nav-link">Examples</a>
+                    <a href="https://github.com/FluffyBrudy/canvas-utils" class="nav-link" target="_blank">GitHub</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">TypeScript Canvas Utilities</h2>
+                    <p class="hero-description">
+                        A lightweight, zero-dependency library for HTML5 Canvas development. 
+                        Inspired by Pygame, built for modern web development.
+                    </p>
+                    <div class="hero-badges">
+                        <img src="https://img.shields.io/npm/v/canvas-utils-core" alt="npm version" class="badge">
+                        <img src="https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white" alt="TypeScript" class="badge">
+                        <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" class="badge">
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="copyToClipboard('npm install canvas-utils-core', this)">Install Package</button>
+                        <a href="#examples" class="btn btn-secondary">View Examples</a>
+                        <a class="btn btn-primary" href="canvas-utils-lib-docs.netlify.app">View Package</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="installation" class="section">
+            <div class="container">
+                <h2 class="section-title">Installation</h2>
+                <div class="code-block">
+                    <pre><code>npm install canvas-utils-core</code></pre>
+                    <button class="copy-btn" onclick="copyToClipboard('npm install canvas-utils-core')">Copy</button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="quick-start" class="section">
+            <div class="container">
+                <h2 class="section-title">Quick Start</h2>
+                <div class="code-block">
+                    <pre><code id="quick-start-code">import { CustomEvent, Rect, Sprite, Group } from "canvas-utils-core";
+
+const canvas = document.querySelector("canvas")!;
+const ctx = canvas.getContext("2d")!;
+const input = new CustomEvent(canvas);
+
+function gameLoop() {
+  const state = input.getState();
+  
+  if (state.leftPressed) {
+    console.log(`Mouse at: ${state.mouseX}, ${state.mouseY}`);
+  }
+  
+  requestAnimationFrame(gameLoop);
+}
+
+gameLoop();</code></pre>
+                    <button class="copy-btn" onclick="copyToClipboard(document.getElementById('quick-start-code').textContent)">Copy</button>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="api-ref" class="section">
+            <div class="container"></div>
+        </section>
+
+        
+        <section id="examples" class="section">
+            <div class="container">
+                <h2 class="section-title">Interactive Examples</h2>
+                
+                <div class="example-grid">
+                    <div class="example-card">
+                        <h3>Input Handling</h3>
+                        <div class="canvas-container">
+                            <canvas id="input-demo" width="400" height="300"></canvas>
+                        </div>
+                        <p>Move your mouse and click to see input detection in action.</p>
+                    </div>
+                    
+                    <div class="example-card">
+                        <h3>Rectangle Collision</h3>
+                        <div class="canvas-container">
+                            <canvas id="collision-demo" width="400" height="300"></canvas>
+                        </div>
+                        <p>Move the blue rectangle with arrow keys to test collision detection.</p>
+                    </div>
+                    
+                    <div class="example-card">
+                        <h3>Sprite Groups</h3>
+                        <div class="canvas-container">
+                            <canvas id="sprite-demo" width="400" height="300"></canvas>
+                        </div>
+                        <p>Click to spawn sprites that move and interact in groups.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 canvas-utils-core. MIT License.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/FluffyBrudy/canvas-utils" target="_blank">GitHub</a>
+                    <a href="https://www.npmjs.com/package/canvas-utils-core" target="_blank">npm</a>
+                    <a href="https://github.com/FluffyBrudy/canvas-utils/issues" target="_blank">Issues</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/docs/main.ts"></script>
+</body>
+</html>
