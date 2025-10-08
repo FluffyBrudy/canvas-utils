@@ -2,4 +2,5 @@
 "canvas-utils-lib": patch
 ---
 
-update docs
+update documentation:
+ - fix broken image for docs

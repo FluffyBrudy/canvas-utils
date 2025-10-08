@@ -1,6 +1,6 @@
 {
   "main": "dist/index.js",
-  "name": "canvas-utils-core",
+  "name": "canvas-utils-lib",
   "description": "Utility package for HTML5 Canvas",
   "keywords": [
     "canvas",

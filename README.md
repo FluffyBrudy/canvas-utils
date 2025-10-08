@@ -1,6 +1,6 @@
 # canvas-utils-core
 
-[![Official Docs](https://canvas-utils-lib-docs.netlify.app)]
+[![Documentation](https://img.shields.io/badge/docs-Official-blue)](https://canvas-utils-lib-docs.netlify.app)
 [![npm version](https://img.shields.io/npm/v/canvas-utils-core)](https://www.npmjs.com/package/canvas-utils-core)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
