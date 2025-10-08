@@ -1,3 +1,0 @@
----
-"canvas-utils-core": major
----
