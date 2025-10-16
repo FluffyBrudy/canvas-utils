@@ -524,4 +524,33 @@ export const apiRegistry = {
       },
     ],
   },
+
+  Noise: {
+    description: "Perlin noise utilities for 1D and 2D noise generation.",
+    extends: null,
+    dependsOn: [],
+    properties: [],
+    methods: [
+      {
+        name: "perlinNoise(coor: { x: number; y: number })",
+        desc: "Computes a 2D Perlin noise value for the given coordinate. Note that it is base noise and normalized as [-1, 1]. If u need to normalie between 0 and 1 simple use (noise+1)/2",
+        params: [
+          {
+            name: "coor",
+            type: "{ x: number, y: number }",
+            desc: "The 2D coordinate input.",
+          },
+        ],
+        returns: "number",
+      },
+      {
+        name: "perlinNoise1D(x: number)",
+        desc: "Computes a 1D Perlin noise value for the given x coordinate.",
+        params: [
+          { name: "x", type: "number", desc: "Position along the 1D axis." },
+        ],
+        returns: "number",
+      },
+    ],
+  },
 };
