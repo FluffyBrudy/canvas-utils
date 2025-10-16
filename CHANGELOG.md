@@ -1,5 +1,13 @@
 # canvas-utils
 
+## 6.0.0
+
+### Major Changes
+
+- 5e8f140: add perlin noise
+
+  ## Breaking Change: None
+
 ## 5.0.1
 
 ### Patch Changes
