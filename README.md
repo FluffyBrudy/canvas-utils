@@ -1,7 +1,7 @@
-# canvas-utils-core
+# canvas-utils-lib
 
 [![Documentation](https://img.shields.io/badge/docs-Official-blue)](https://canvas-utils-lib-docs.netlify.app)
-[![npm version](https://img.shields.io/npm/v/canvas-utils-core)](https://www.npmjs.com/package/canvas-utils-core)
+[![npm version](https://img.shields.io/npm/v/canvas-utils-lib)](https://www.npmjs.com/package/canvas-utils-lib)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -20,13 +20,13 @@ A lightweight TypeScript utility library for HTML5 Canvas development. Inspired 
 ## Installation
 
 ```bash
-npm install canvas-utils-core
+npm install canvas-utils-lib
 ```
 
 ## Quick Start
 
 ```typescript
-import { CustomEvent, Rect, Sprite, Group, ImageObj } from "canvas-utils-core";
+import { CustomEvent, Rect, Sprite, Group, ImageObj } from "canvas-utils-lib";
 
 // Setup canvas and input handling
 const canvas = document.querySelector("canvas")!;
@@ -270,7 +270,7 @@ class MySprite extends Sprite {
 ## 🎮 Complete Game Example
 
 ```typescript
-import { CustomEvent, Rect, Sprite, Group } from "canvas-utils-core";
+import { CustomEvent, Rect, Sprite, Group } from "canvas-utils-lib";
 
 class Player extends Sprite {
   speed = 5;
@@ -347,5 +347,5 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 - [GitHub Repository](https://github.com/FluffyBrudy/canvas-utils)
 - [Issues & Bug Reports](https://github.com/FluffyBrudy/canvas-utils/issues)
-- [NPM Package](https://www.npmjs.com/package/canvas-utils-core)
+- [NPM Package](https://www.npmjs.com/package/canvas-utils-lib)
 
