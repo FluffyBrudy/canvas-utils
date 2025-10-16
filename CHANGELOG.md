@@ -1,5 +1,14 @@
 # canvas-utils
 
+## 5.0.1
+
+### Patch Changes
+
+- 07b23b1: update documentation:
+  - fix broken image for docs
+- 08dab40: fix documentation
+- e4518f2: fix documentation
+
 ## 5.0.0
 
 ### Major Changes

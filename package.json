@@ -20,7 +20,7 @@
     "url": "git+https://github.com/FluffyBrudy/canvas-utils"
   },
   "private": false,
-  "version": "5.0.0",
+  "version": "5.0.1",
   "type": "module",
   "files": [
     "dist"
